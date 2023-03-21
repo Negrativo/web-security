@@ -13,10 +13,31 @@
 
       .centralizar-text {
         text-align: center;
+        font-family: Verdana;
       }
 
       .centralizar {
+        flex-direction: column;
         align-items: center;
+      }
+
+      .button {
+        border: none;
+        color: rgb(97, 97, 97);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 25px;
+      }
+
+      .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
 
     </style>
@@ -26,15 +47,28 @@
     <body class="body">
       <div class="centralizar">
         <img 
+        class="img"
           scr="src/secure.png" 
           width="200px" 
           height="200px"
           alt="Secure"
         >
       </div>
-      <div class="centralizar-text">
-        Esta paginá é segura
+      <div>
+        <div class="centralizar-text">
+          Esta paginá contem um verificador de segurança e encaminhará automaticamente para a loja.
+        </div>
+        <div class="centralizar-text">
+          Caso não seja encaminhado automaticamente, clique no botão abaixo:
+        </div>
+        <div class="centralizar">
+          <button class="button">
+              Ir para a loja
+          </button>
+        </div>
       </div>
+      
+
       
     </body>
 </html>
