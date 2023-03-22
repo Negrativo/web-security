@@ -7,23 +7,19 @@
     <style>
 
       .body {
-        color: #e4e4e4;
-        background-color: #272727;
+        background-color: #e4e4e4;
       }
 
       .centralizar-text {
+        font-size: 17;
         text-align: center;
         font-family: Verdana;
       }
 
-      .centralizar {
-        flex-direction: column;
-        align-items: center;
-      }
-
       .button {
         border: none;
-        color: rgb(97, 97, 97);
+        color: rgb(255, 255, 255);
+        background-color: #00aa00;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -49,12 +45,12 @@
         flex-direction: row;
         text-align: center;
         font-family: Verdana;
-        font-size: 11;
+        font-size: 15;
       }
 
       .termos-de-uso {
         font: bold;
-        font-size: 12;
+        font-size: 14;
         color: #1520f1;
         background-color: #00000000;
         border: #00000000;
@@ -65,15 +61,13 @@
 
     </script>
     <body class="body">
-      <div class="centralizar">
-        <img 
-          class="center margin-horizontal"
-          src="src/secure.png"
-          width="200px" 
-          height="200px"
-          alt="Secure"
-        >
-      </div>
+      <img 
+        class="center margin-horizontal"
+        src="src/shield-verde.png"
+        width="200px" 
+        height="200px"
+        alt="Secure"
+      >
       <div>
         <div class="centralizar-text">
           Esta paginá contem um verificador de segurança e encaminhará automaticamente para a loja.
@@ -83,16 +77,13 @@
         </div>
         <div class="centralizar margin-horizontal">
           <button class="button center">
-              Ir para a loja
+              Ir para a Pura Drop
           </button>
         </div>
         <div class="termos-div">
           Ao direcionar a loja, é aceito automaticamente os
-          <button class="termos-de-uso">Termos de Uso</button>
+          <button class="termos-de-uso">Termos de Uso e Políticas de Privacidade</button>
         </div>
-      </div>
-      
-
-      
+      </div>      
     </body>
 </html>
