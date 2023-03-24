@@ -46,7 +46,6 @@
       }
 
       .termos-div {
-        flex-direction: row;
         text-align: center;
         font-family: Verdana;
         font-size: 15;
@@ -62,12 +61,23 @@
 
       .politicas {
         display: none;
+        padding: 10px;
+        height: 45%;
+        overflow: auto;
       }
 
-      .footer {
-        height: 50px;
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         background-color: #00aa00;
         color: rgb(255, 255, 255);
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        border-top: 1px solid #ddd;
       }
 
     </style>
@@ -76,7 +86,6 @@
       function showPoliticas() {
         const politicas = document.getElementById("politicasId");
         const display = politicas.style.display;
-        console.log(display);
         if (display === 'none') {
           politicas.style.display = 'block';
         } else {
@@ -254,13 +263,13 @@
           </p>
           <p>
             <span style="color: rgb(68, 68, 68);">
-              Esta política é efetiva a partir de&nbsp;22 March 2023 20:49
+              Esta política é efetiva a partir de&nbsp;22 March 2023.
             </span>
           </p>
         </div>
       </div> 
-      <div class="footer termos-div">
+      <footer class="footer termos-div">
         ©Copyright 2023. Todos os direitos reservados. 
-      </div>     
+      </footer>     
     </body>
 </html>
